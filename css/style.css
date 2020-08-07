@@ -3,38 +3,234 @@
     padding: 0;
 }
 
-header {
-  background-color: salmon;
-  width: 100%;
-  height: 200px;
+body{
+  font-family: 'Mulish', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-    
-div#card-pessoal{
-  margin-top: 140px;
-  background-color: teal;
+
+header{
+  position: absolute;
+  background-color: salmon;
+  width: 100%;
+  height: 200px;
+}
+
+main{
+  position: relative;
+  /*background-color: aqua;*/
   width: 900px;
+  height: 1000px;
+  float: left;
+}
+
+.card{
+  background-color: bisque;
+  width: 900px;
+  box-shadow: 3px 3px 15px rgba(0,0,0.25);
+  margin-bottom: 50px;
+}
+
+div#imagem{
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/fotos\ portifolio\ minha.jpg);
+  background-position: center;
+}
+
+
+div#card-pessoal{
+  position: relative;
+  margin-top: 40px;
   height: 350px;
 }
 
-h1#nome{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+div#card-pessoal span{
   position: absolute;
-  margin-top: 50px;
-  margin-left: 100px;
+  color: black;
+  margin-left: 320px;
+  font-size: 18px;
 }
-span#profissão{
-  color: aquamarine;
-  font-family: Arial, Helvetica, sans-serif;
+
+.card-título{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 85px;
+  font-size: 28px !important;
+  font-weight: bold;
+  color: black;
+}
+
+
+div#card-pessoal span#subtítulo{
+  margin-top: 45px;
+  color: rgb(20, 7, 7);
   font-size: 18px;
   font-weight: lighter;
-  position: absolute;
-  margin-top: 90px;
-  margin-left: 100px;
-  
+}
 
+div#linha{
+  width: 455px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 320px;
+  border: 1px solid #a8a8a8;
+}
+
+div#card-pessoal footer{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+  width: 600px;
+  height: 60px;
+  align-items: center;
+  background:salmon;
+  bottom: 0px;
+}
+
+div#card-pessoal footer a{
+  width: 120px;
+  color: antiquewhite;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+}
+
+div#card-sobre{
+  height: 260px;
+}
+
+.linha{
+  position: absolute;
+  border: 1px solid black;
+  width: 730px;
+  margin-left: 85px;
+  margin-top: 75px;
+}
+
+.text-card{
+  text-align: justify;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: lighter;
+}
+
+div#card-sobre p{
+  position: absolute;
+  width: 730px;
+  margin-left: 85px;
+  margin-top: 100px;
+}
+
+
+div#card-formação{
+  height: 400px;
+}
+
+div#card-experiência{
+  height: 370px;
+}
+
+div#card-habilidades{
+  height: 370px;
+}
+
+div#card-experiência ul,
+div#card-formação ul{
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 100px;
+}
+div#card-experiência ul li,
+div#card-formação ul li{
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+div#card-experiência ul span,
+div#card-formação ul span{
+  font-weight: bold;
+  font-size: 21px;
+}
+div#card-experiência ul p,
+div#card-formação ul p{
+  width: 670px;
+  margin-bottom: 30px;
+}
+
+
+h1#nome{
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  margin-top: 5%;
+}
+
+h2#profissão{
+  color: black;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+div#main{
+  position: absolute;
+  width: 700px;
+  height: 250px;
+  margin-left: 90px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 20px;
+}
+
+.coluna-50{
+  width: 50%;
+  height: 80px;
+}
+
+div#main span{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.status-100{
+  width: 236px;
+  height: 15px;
+  background-color: darkgray;
+  border-radius: 22px;
+  margin-top: 11px;
+}
+
+div#meu-status-js{
+  height: 15px;
+  background-color: rgb(78, 30, 14);
+  border-radius: 22px;
+  width: 195px;
+}
+
+div#meu-status-html{
+  height: 15px;
+  background-color: rgb(78, 30, 14);
+  border-radius: 22px;
+  width: 155px;
+}
+
+div#meu-status-cozinha{
+  height: 15px;
+  background-color: rgb(78, 30, 14);
+  border-radius: 22px;
+  width: 95px;
+}
+
+div#meu-status-dance{
+  height: 15px;
+  background-color: rgb(78, 30, 14);
+  border-radius: 22px;
+  width: 145px;
 }
